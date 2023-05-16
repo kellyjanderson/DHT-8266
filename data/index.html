@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Temperature and Humidity</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .box {
+        min-width: 30%;
+        padding: 5px;
+        box-sizing: border-box;
+        flex: 1;
+    }
+
+    .label {
+        background-color: #ccc;
+        font-weight: bold;
+    }
+
+    .value {
+        background-color: #eee;
+    }
+
+</style>
+<script src="">
+    window.onload(() => {
+        setTimeout(() => window.location.reload(), 2000);
+    });
+
+</script>
+
+<body>
+
+    <div class="container">
+		<div class="box label">Temp C</div>
+		<div class="box label">Temp F</div>
+		<div class="box label">Humidity</div>
+		<div class="box value">{{tc}}</div>
+        <div class="box value">{{tf}}</div>
+        <div class="box value">{{h}}%</div>
+	</div>
+
+</body>
+
+</html>
